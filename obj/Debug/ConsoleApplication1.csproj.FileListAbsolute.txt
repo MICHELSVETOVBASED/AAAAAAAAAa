@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Microsoft Visual Studio\repos\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Program Files (x86)\Microsoft Visual Studio\repos\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Program Files (x86)\Microsoft Visual Studio\repos\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Microsoft Visual Studio\repos\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Microsoft Visual Studio\repos\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Program Files (x86)\Microsoft Visual Studio\repos\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
