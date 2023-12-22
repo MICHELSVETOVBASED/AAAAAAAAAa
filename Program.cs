@@ -25,10 +25,11 @@ public class Solution {
         Coordinates coordinates1 = new Spider(list1[0], list1[1], list1[2]);
         double d = Sqrt(Pow((coordinates.X - coordinates1.X), 2) + Pow((coordinates.Y - coordinates1.Y), 2) +
                         Pow((coordinates.Z - coordinates1.Z), 2));
-        
-        double p = ;
+
+        double p = Abs(coordinates1.X - coordinates.X) + Abs(coordinates1.Y - coordinates.Y) +
+                   Abs(coordinates1.Z - coordinates.Z);
         Console.WriteLine(d);
-        Console.WriteLine(h);
+        Console.WriteLine(p);
 
 
     }
