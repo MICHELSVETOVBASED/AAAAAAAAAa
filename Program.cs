@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Common;
+using static System.Math;
+
+
 
 
 public class Solution {
@@ -18,28 +20,44 @@ public class Solution {
         {
             list1.Add(int.Parse(inputs1[i]));
         }
+        
+        Coordinates coordinates = new Fly(list[0],list[1], list[2]);
+        Coordinates coordinates1 = new Spider(list1[0], list1[1], list1[2]);
+        double d = Sqrt(Pow((coordinates.X - coordinates1.X), 2) + Pow((coordinates.Y - coordinates1.Y), 2) +
+                        Pow((coordinates.Z - coordinates1.Z), 2));
 
-        Coordinates coordinates = new Coordinates();
-        coordinates.x = list[0];
-        coordinates.y = list[1];
-        coordinates.z = list[2];
-        Coordinates  coordinates1 = new Coordinates();
-        coordinates1.x = list1[0];
-        coordinates1.y = list1[1];
-        coordinates1.z = list1[2];
+        double p = Abs(coordinates1.X - coordinates.X) + Abs(coordinates1.Y - coordinates.Y) +
+                   Abs(coordinates1.Z - coordinates.Z);
+        Console.WriteLine(d);
+        Console.WriteLine(p);
+
+
     }
 }
 
 public class Coordinates
 {
-    public int x { get; set; }
-    public int y { get; set; }
-    public int z { get; set; }
-}
-class Fly
-{
-    public Coordinates Coordinates{ get; set; }
+    public Coordinates(int x, int y, int z) // то есть что вмещает в себя этот класс, так как не можем написать в объявлении класса
     {
-        
+        X = x;
+        Y = y;
+        Z = z;
+    }
+    public int X { get; set; }
+    public int Y { get; set; }
+    public int Z { get; set; }
+    
+}
+public class Fly : Coordinates
+{
+    public Fly(int x, int y, int z) : base(x, y, z)
+    {
+    }
+}
+
+class Spider : Coordinates
+{
+    public Spider(int x, int y, int z) : base(x, y, z)
+    {
     }
 }
