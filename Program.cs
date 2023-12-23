@@ -21,13 +21,12 @@ public class Solution {
             list1.Add(int.Parse(inputs1[i]));
         }
         
-        Coordinates coordinates = new Fly(list[0],list[1], list[2]);
+        Coordinates coordinates = new Fly(list[0],list[1], list[2]);//прописыванием каждое значение для класса
         Coordinates coordinates1 = new Spider(list1[0], list1[1], list1[2]);
         double d = Sqrt(Pow((coordinates.X - coordinates1.X), 2) + Pow((coordinates.Y - coordinates1.Y), 2) +
                         Pow((coordinates.Z - coordinates1.Z), 2));
 
-        double p = Abs(coordinates1.X - coordinates.X) + Abs(coordinates1.Y - coordinates.Y) +
-                   Abs(coordinates1.Z - coordinates.Z);
+        if ( coordinates.X-coordinates1.X==0 && )
         Console.WriteLine(d);
         Console.WriteLine(p);
 
@@ -38,7 +37,7 @@ public class Solution {
 public class Coordinates
 {
     public Coordinates(int x, int y, int z) // то есть что вмещает в себя этот класс, так как не можем написать в объявлении класса
-    {
+    {//создаются эти значения при условиях компонента общего класса
         X = x;
         Y = y;
         Z = z;
